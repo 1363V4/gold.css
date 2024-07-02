@@ -11,6 +11,7 @@ user variables
 	--gold_0: #C1A24E;
 	--gold_1: #8D7840;
 	--gold_2: #7a6220;
+	--blue: #010C1E;
 }
 
 /* 
@@ -66,7 +67,6 @@ p, h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	flex-wrap: wrap;
 }
 
 .stack_large > * + * {
@@ -329,4 +329,18 @@ article {
 
 .pill_title {
 	height: 100%;
+}
+
+.logo {
+	width: 3em;
+}
+
+header {
+	background-color: var(--blue);
+}
+
+.endt {
+	font-size: var(--s3);
+	color: var(--blue);
+	font-weight: bolder;
 }
