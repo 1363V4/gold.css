@@ -84,7 +84,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	margin-inline: auto;
 	padding-inline-start: var(--s1);
 	padding-inline-end: var(--s1);
-}	
+}
 
 /* simple.css ideas */
 
@@ -105,27 +105,21 @@ body > footer {
 h1 {
 	font-size: var(--s5);
 }
-
 h2 {
 	font-size: var(--s4);
 }
-
 h3 {
 	font-size: var(--s3);
 }
-
 h4 {
 	font-size: var(--s2);
 }
-
 h5 {
 	font-size: var(--s1);
 }
-
 h6 {
 	font-size: var(--s0);
 }
-
 p {
 	font-size: var(--s0);
 }
@@ -154,8 +148,8 @@ textarea:disabled,
 select:disabled,
 button[disabled] {
 	cursor: not-allowed;
-	background-color: var(--gold_0);
-	border-color: var(--gold_0);
+	background-color: var(--blue);
+	border-color: var(--blue);
 	color: var(--gold_2);
 }
 
@@ -175,6 +169,7 @@ input[type="submit"]:enabled:hover,
 input[type="reset"]:enabled:hover,
 input[type="button"]:enabled:hover,
 label[type="button"]:hover {
+	color: var(--gold_0);
 	background-color: var(--gold_2);
 	border-color: var(--gold_2);
 	cursor: pointer;
@@ -220,22 +215,6 @@ button,
 	border-radius: var(--s2);
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-	vertical-align: middle;
-	width: min-content;
-}
-
-input[type="checkbox"]:checked,
-input[type="radio"]:checked {
-	background-color: var(--gold_2);
-}
-
-input[type="color"] {
-	height: var(--s2);
-	padding: var(--s-2);
-}
-
 hr {
 	border: none;
 	height: 1px;
@@ -259,12 +238,16 @@ code {
 	color: var(--dark);
 }
 
+pre {
+	white-space: pre-line;
+}
+
 /* 
-starting from here
-go cray cray
+gold.css utilities
+(work in progress)
 */
 
-.stack_row {
+.chain {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -290,13 +273,10 @@ go cray cray
 	width: 61.8%;
 }
 
-.black {
-	background-color: black;
-}
-
-.white {
-	background-color: white;
-}
+/* 
+starting from here
+go cray cray
+*/
 
 article {
 	border: 1px solid var(--dark);

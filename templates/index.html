@@ -10,17 +10,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <body class="stack stack_large">
-        <header class="stack_row">
+        <header class="chain">
             <img class="logo" src="/static/img/img.jpg">
             <nav>
-                <a href="#home">Features</a>
-                <a href="#about">Demo</a>
-                <a href="#contact">FAQ</a>
-                <a href="#contact">Download</a>
+                <a href="#features">Features</a>
+                <a href="#demo">Demo</a>
+                <a href="#faq">FAQ</a>
+                <a href="#download">Download</a>
             </nav>
         </header>
         <section class="stack stack_medium gold_center">
-            <div class="stack_row">
+            <div class="chain">
                 <h1 class="gold_1">gold</h1>
                 <p class="gold_0 endt">.css</p>
             </div>
@@ -32,15 +32,18 @@
                 </div>
                 <div class="gold_1 gold_center">
                     <div class="stack">
-                        <p class="gold_1">
-                            gold.css is an atomic css stylesheet based on the golden ratio.
-                            it is really beautiful.
-                            and a work in progress.
-                        </p>
+                        <div class="gold_1">
+                            <p>
+                                <strong>gold.css</strong> 
+                                is a CSS stylesheet based on the golden ratio.
+                            </p>
+                            <p>
+                                <em>A work in progress.</em>
+                            </p>
+                        </div>
                         <div class="gold_0">
-                            <div class="stack_row">
-                                <button>demo</button>
-                                <button>download</button>
+                            <div class="chain">
+                                <a href="#download"><button>Download</button></a>
                             </div>
                         </div>
                     </div>
@@ -49,43 +52,48 @@
         </section>
         <section class="stack stack_medium">
             <div class="banner">
-                <h2>Features</h2>
+                <a href="#features"><h2 id="features">Features</h2></a>
             </div>
             <div class="stack stack_small gold_center">
-                <article class="stack_row">
+                <article class="chain">
                     <div class="dark_bg gold_0">
                         <h3 class="gold_center">1</h3>
                     </div>
                     <div class="gold_1">
                         <p class="margin_small">
-                            nouice ratios
+                            <strong>Ratios: </strong>
+                            everything is (or should be) based on the
+                            <a href="https://en.wikipedia.org/wiki/Golden_ratio">golden ratio</a>.
                         </p>
                     </div>
                 </article>
-                <article class="stack_row">
+                <article class="chain">
                     <div class="gold_1">
                         <p class="margin_small">
-                            nouice reset
+                            <strong>Resets: </strong>
+                            Sensible CSS defaults so you can build and expand it easily.
                         </p>
                     </div>
                     <div class="dark_bg gold_0">
                         <h3 class="gold_center">2</h3>
                     </div>
                 </article>
-                <article class="stack_row">
+                <article class="chain">
                     <div class="dark_bg gold_0">
                         <h3 class="gold_center">3</h3>
                     </div>
                     <div class="gold_1">
                         <p class="margin_small">
-                            nouice classes
+                            <strong>Classes: </strong>
+                            Easy-to-use classes to make the most of flexboxes.
                         </p>
                     </div>
                 </article>
+            </div>
         </section>
         <section class="stack stack_medium">
             <div class="banner">
-                <h2>Demo</h2>
+                <a href="#demo"><h2 id="demo">Demo</h2></a>
             </div>
             <div class="stack stack_medium gold_center">
                 <div class="stack stack_small">
@@ -94,31 +102,51 @@
                     <article class="padding_small">a</article>
                     <article class="padding_small">stack...</article>
                 </div>
+                <pre>
+                    <code>
+                        &lt;div class="stack stack_small"&gt;
+                            &lt;h3&gt;The Stack&lt;/h3&gt;
+                            &lt;p&gt;Make&lt;/p&gt;
+                            &lt;p&gt;a&lt;/p&gt;
+                            &lt;p&gt;stack...&lt;/p&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
                 <hr>
                 <h3>The Chain</h3>
-                <div class="stack_row">
+                <div class="chain">
                     <article class="padding_small">or</article>
                     <article class="padding_small">a</article>
                     <article class="padding_small">chain...</article>
                 </div>
+                <pre>
+                    <code>
+                        &lt;div class="chain"&gt;
+                            &lt;h3&gt;The Stack&lt;/h3&gt;
+                            &lt;p&gt;or&lt;/p&gt;
+                            &lt;p&gt;a&lt;/p&gt;
+                            &lt;p&gt;chain...&lt;/p&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
                 <hr>
                 <h3>Divinely spaced</h3>
                 <div class="stack stack_small">
-                    <article class="stack stack_small pill">
-                        <div class="article_title gold_0 dark_bg">
-                            <h4>
+                    <article class="stack stack_small">
+                        <div class="gold_0 dark_bg">
+                            <h4 class="gold_center">
                                 Φ
                             </h4>
                         </div>
-                        <p class="gold_1 margin_small">=1.61803398874989484820458683436563811772030917980576286213544862270526046281890244970720720418939113748475...</p>
+                        <p class="gold_1 margin_small">=1.6180339887498948482045868343656381177203091798057628621354486227...</p>
                     </article>        
-                    <article class="stack_row">
+                    <article class="chain">
                         <div class="pill_title dark_bg gold_0">
                             <h3 class="gold_center">Φ</h3>
                         </div>
                         <div class="gold_1 padding_small">
                             <p>
-                                =1.61803398874989484820458683436563811772030917980576286213544862270526046281890244970720720418939113748475...
+                                =1.6180339887498948482045868343656381177203091798057628621354486227...
                             </p>
                         </div>
                     </article>
@@ -128,6 +156,17 @@
                 <div class="stack stack_small gold_center">
                     <input type="text" placeholder="Input..." class="padding_small">
                     <button class="padding_small">Submit</button>
+                    <button disabled="True">Disabled</button>
+                    <div class="chain">
+                        <input type="radio" id="radioOption1" name="radioGroup" value="option1">
+                        <label for="radioOption1">Option 1</label>
+                        <input type="radio" id="radioOption2" name="radioGroup" value="option2">
+                        <label for="radioOption2">Option 2</label>
+                    </div>
+                    <div class="chain">
+                        <input type="checkbox" id="checkboxOption" name="checkboxGroup" value="option">
+                        <label for="checkboxOption">Checkbox Option</label>
+                    </div>
                 </div>
                 <hr>
                 <h3>Table and lists</h3>
@@ -172,7 +211,7 @@
         </section>
         <section>
             <div class="banner">
-                <h2>FAQ</h2>
+                <a href="#faq"><h2 id="faq">FAQ</h2></a>
             </div>
             <div class="stack stack_medium gold_center">
                 <div>
@@ -181,7 +220,12 @@
                 </div>
                 <div>
                     <h3>... what?</h3>
-                    <p>I am combining josh cormeau reset classes, every-layout.dev frames and modular design (spaces and ratios are based on the golden ratio)</p>
+                    <p>
+                        I am combining 
+                        <a href="https://www.joshwcomeau.com/css/custom-css-reset/">josh comeau css reset</a>, 
+                        <a href="https://every-layout.dev/">every-layout.dev</a> frames 
+                        and modular design (spaces and <abbr title="heavily leveraged">flexboxes</abbr> are based on the golden ratio)
+                    </p>
                 </div>
                 <div>
                     <h3>It looks bad</h3>
@@ -189,19 +233,24 @@
                 </div>
                 <div>
                     <h3>Where are you going?</h3>
-                    <p>I want it to end up as a Uno CSS template. Help.</p>
+                    <p>
+                        I want it to end up as a <a href="https://unocss.dev/">UnoCSS</a> template. Help.
+                    </p>
                 </div>
                 <div>
                     <h3>How can I help?</h3>
-                    <p>Break it then reach me on X @merelyacat</p>
+                    <p>Break it, roast it, then reach me on X <a href="https://x.com/merelyacat">@merelyacat</a></p>
                 </div>
             </div>
         </section>
         <section>
             <div class="banner">
-                <h2>Download</h2>
+                <a href="#download"><h2 id="download">Download</h2></a>
             </div>
-            <p>Just open devtools my man</p>
+            <div class="stack stack_medium gold_center">
+                <p>Just open devtools my man</p>
+                <p>Or check the <a href="https://github.com/1363V4/gold.css/blob/main/static/css/gold.css">Github</a></p>
+            </div>
         </section>
         
         <footer>
