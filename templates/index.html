@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/static/css/gold.css">
+        <link rel="stylesheet" href="/static/css/site.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,250 +12,232 @@
         <link rel="icon" href="/static/img/img.jpg">
         <title>Gold CSS</title>
     </head>
-    <body class="stack stack_large">
-        <header class="chain">
-            <img class="logo" src="/static/img/img.jpg">
-            <nav>
+    <body class="stack gap-xxl">
+        <header id="#top">
+            <a href="#top"><img class="logo" src="/static/img/img.jpg"></a>
+            <nav class="chain gap-m">
                 <a href="#features">Features</a>
                 <a href="#demo">Demo</a>
                 <a href="#faq">FAQ</a>
                 <a href="#download">Download</a>
             </nav>
         </header>
-        <section class="stack stack_medium gold_center">
-            <div class="chain">
-                <h1 class="gold_1">Gold</h1>
-                <p class="gold_0 endt">.css</p>
-            </div>
-            <article class="stack">
-                <div class="article_title dark_bg gold_0">
-                    <h4>
-                        What is gold.css?
-                    </h4>
+        <section class="stack gap-xl gold-center">
+            <div id="title">
+                <h1>Gold</h1>
+                <div class="gold-center">
+                    <p>.css</p>
                 </div>
-                <div class="gold_1 gold_center">
-                    <div class="stack">
-                        <div class="gold_1">
-                            <p>
-                                <strong>gold.css</strong> 
-                                is a CSS stylesheet based on the golden ratio.
-                            </p>
-                            <p>
-                                <em>A work in progress.</em>
-                            </p>
-                        </div>
-                        <div class="gold_0">
-                            <div class="chain">
-                                <a href="#download"><button>Download</button></a>
+            </div>
+            <div class="gold-center">
+                <article id="hero" class="gg-01-v dark-bg">
+                    <div>
+                        <h2>
+                            Discover Gold.css
+                        </h2>
+                    </div>
+                    <div class="stack gap-l gold-bg">
+                        <div class="gold-center">
+                            <div class="gg-10-v p-m">
+                                <p>
+                                    A modular CSS stylesheet based on the 
+                                    <strong>golden ratio</strong>
+                                </p>
+                                <div class="gold-center">
+                                    <a href="#download">
+                                        <button class="p-m">
+                                            Download
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </article>
-        </section>
-        <section class="stack stack_medium">
-            <div class="banner">
-                <a href="#features"><h2 id="features">Features</h2></a>
+                </article>
             </div>
-            <div class="stack stack_small gold_center">
-                <article class="chain">
-                    <div class="dark_bg gold_0">
-                        <h3 class="gold_center">1</h3>
-                    </div>
-                    <div class="gold_1">
-                        <p class="margin_small">
-                            <strong>Ratios: </strong>
-                            everything is (or should be) based on the
-                            <a href="https://en.wikipedia.org/wiki/Golden_ratio">golden ratio</a>.
-                        </p>
-                    </div>
-                </article>
-                <article class="chain">
-                    <div class="gold_1">
-                        <p class="margin_small">
-                            <strong>Resets: </strong>
-                            Sensible CSS defaults so you can build and expand it easily.
-                        </p>
-                    </div>
-                    <div class="dark_bg gold_0">
-                        <h3 class="gold_center">2</h3>
+        </section>
+        <section id="features" class="stack gap-xl">
+            <div class="banner">
+                <a href="#features"><h2>Features</h2></a>
+            </div>
+            <div class="stack gap-l gold-center">
+                <article class="gg-01 gold-bg">
+                    <h3 class="gold-center">1</h3>
+                    <div class="p-s light-bg">
+                        <strong>Balance: </strong>
+                        Design based on the
+                        <a href="https://en.wikipedia.org/wiki/Golden-ratio">golden ratio</a>.
                     </div>
                 </article>
-                <article class="chain">
-                    <div class="dark_bg gold_0">
-                        <h3 class="gold_center">3</h3>
+                <article class="gg-10 gold-bg">
+                    <div class="p-s light-bg">
+                        <strong>Resets: </strong>
+                        Sensible CSS defaults.
                     </div>
-                    <div class="gold_1">
-                        <p class="margin_small">
-                            <strong>Classes: </strong>
-                            Easy-to-use classes to make the most of flexboxes.
-                        </p>
+                    <h3 class="gold-center">2</h3>
+                </article>
+                <article class="gg-01 gold-bg">
+                    <h3 class="gold-center">3</h3>
+                    <div class="p-s light-bg">
+                        Easy-to-use and atomic classes.
                     </div>
                 </article>
             </div>
         </section>
-        <section class="stack stack_medium">
+        <section id="demo" class="stack gap-xl">
             <div class="banner">
-                <a href="#demo"><h2 id="demo">Demo</h2></a>
+                <a href="#demo"><h2>Demo</h2></a>
             </div>
-            <div class="stack stack_medium gold_center">
-                <div class="stack stack_small">
-                    <h3>The Stack</h3>
-                    <article class="padding_small">Make</article>
-                    <article class="padding_small">a</article>
-                    <article class="padding_small">stack...</article>
-                </div>
-                <pre>
-                    <code>
-                        &lt;div class="stack stack_small"&gt;
-                            &lt;h3&gt;The Stack&lt;/h3&gt;
-                            &lt;p&gt;Make&lt;/p&gt;
-                            &lt;p&gt;a&lt;/p&gt;
-                            &lt;p&gt;stack...&lt;/p&gt;
-                        &lt;/div&gt;
-                    </code>
-                </pre>
-                <hr>
-                <h3>The Chain</h3>
-                <div class="chain">
-                    <article class="padding_small">or</article>
-                    <article class="padding_small">a</article>
-                    <article class="padding_small">chain...</article>
-                </div>
-                <pre>
-                    <code>
-                        &lt;div class="chain"&gt;
-                        &lt;p&gt;or&lt;/p&gt;
-                        &lt;p&gt;a&lt;/p&gt;
-                        &lt;p&gt;chain...&lt;/p&gt;
-                        &lt;/div&gt;
-                    </code>
-                </pre>
-                <hr>
-                <div class="stack stack_small">
-                    <h3>The Center</h3>
-                    <p class="dark_bg">Φ</p>
-                    <div class="gold_center stack stack_small">
-                        <p class="dark_bg">1</p>
-                        <div class="gold_center">
-                            <p class="dark_bg">1/Φ</p>
+            <div class="stack gap-l gold-center">
+                <div class="stack gap-m">
+                    <h3>Divinely spaced</h3>
+                    <article class="gg-01 gold-bg">
+                        <h3 class="gold-center">Golden Grid</h3>
+                        <div class="p-s light-bg">
+                            <pre>
+                                <code>
+                                    &lt;div class="gg-10"&gt;
+                                        &lt;h3&gt;Golden Grid&lt;/h3&gt;
+                                        &lt;p&gt;Code&lt;/p&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
                         </div>
-                    </div>
-                </div>
-                <pre>
-                    <code>
-                        &lt;p&gt;Φ&lt;/p&gt;
-                        &lt;div class="gold_center"&gt;
-                            &lt;p&gt;1&lt;/p&gt;
-                        &lt;/div&gt;
-                    </code>
-                </pre>
-                <hr>
-                <h3>Divinely spaced</h3>
-                <div class="stack stack_small">
-                    <article class="stack stack_small">
-                        <div class="gold_0 dark_bg">
-                            <h4 class="gold_center">
-                                Φ
-                            </h4>
-                        </div>
-                        <p class="gold_1 margin_small">=1.6180339887498948482045868343656381177203091798057628621354486227...</p>
-                    </article>        
-                    <article class="chain">
-                        <div class="pill_title dark_bg gold_0">
-                            <h3 class="gold_center">Φ</h3>
-                        </div>
-                        <div class="gold_1 padding_small">
-                            <p>
-                                =1.6180339887498948482045868343656381177203091798057628621354486227...
-                            </p>
+                    </article>
+                    <article class="gg-01-v gold-bg">
+                        <h3 class="gold-center">Golden Grid</h3>
+                        <div class="p-s light-bg">
+                            <pre>
+                                <code>
+                                    &lt;div class="gg-10-v"&gt;
+                                    &lt;h3&gt;Golden Grid&lt;/h3&gt;
+                                    &lt;p&gt;Code&lt;/p&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
                         </div>
                     </article>
                 </div>
                 <hr>
-                <h3>Inputs and Buttons</h3>
-                <div class="stack stack_small gold_center">
-                    <input type="text" placeholder="Input..." class="padding_small">
-                    <button class="padding_small">Submit</button>
-                    <button disabled="True">Disabled</button>
-                    <div class="chain">
-                        <input type="radio" id="radioOption1" name="radioGroup" value="option1">
-                        <label for="radioOption1">Option 1</label>
-                        <input type="radio" id="radioOption2" name="radioGroup" value="option2">
-                        <label for="radioOption2">Option 2</label>
+                <div class="stack gap-m">
+                    <h3>The Center</h3>
+                    <div>
+                        <p class="gold-bg">Φ</p>
+                        <div class="gold-center">
+                            <p class="light-bg">1</p>
+                            <div class="gold-center">
+                                <p class="gold-bg">1/Φ</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="chain">
-                        <input type="checkbox" id="checkboxOption" name="checkboxGroup" value="option">
-                        <label for="checkboxOption">Checkbox Option</label>
+                    <pre>
+                        <code>
+                            &lt;p&gt;Φ&lt;/p&gt;
+                            &lt;div class="gold-center"&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+                <div class="stack gap-m">
+                    <h3>The Stack</h3>
+                    <article class="p-s">Make</article>
+                    <article class="p-s">a</article>
+                    <article class="p-s">stack...</article>
+                    <pre>
+                        <code>
+                            &lt;div class="stack stack-small"&gt;
+                            &lt;h3&gt;The Stack&lt;/h3&gt;
+                            &lt;p&gt;Make&lt;/p&gt;
+                            &lt;p&gt;a&lt;/p&gt;
+                            &lt;p&gt;stack...&lt;/p&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+                <div class="stack gap-m">
+                    <h3>The Chain</h3>
+                    <div class="chain gap-l">
+                        <article class="p-s">or</article>
+                        <article class="p-s">a</article>
+                        <article class="p-s">chain...</article>
+                    </div>
+                    <pre>
+                        <code>
+                            &lt;div class="chain"&gt;
+                            &lt;p&gt;or&lt;/p&gt;
+                            &lt;p&gt;a&lt;/p&gt;
+                            &lt;p&gt;chain...&lt;/p&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+                <div class="stack gap-m gold-center">
+                    <h3>Typography</h3>
+                    <article>
+                        <h1>h1</h1>
+                        <h2>h2</h2>
+                        <h3>h3</h3>
+                        <h4>h4</h4>
+                        <p>p</p>
+                    </article>
+                    <blockquote>"Carpe Diem"</blockquote>
+                    <code>print("hello world")</code>
+                    <abbr title="Dolor Sic Amet">Lorem Ipsum</abbr>
+                </div>
+                <hr>
+                <div class="stack gap-m">
+                    <h3>Inputs and Buttons</h3>
+                    <div class="gold-center">
+                        <input class="p-s" type="text" placeholder="Input...">
+                    </div>
+                    <div class="gold-center">
+                        <button class="p-s">Submit</button>
+                    </div>
+                    <div class="gold-center">
+                        <button class="p-s" disabled="True">Disabled</button>
+                    </div>
+                    <div class="gold-center">
+                        <div class="chain gap-m">
+                            <input type="radio" id="radioOption1" name="radioGroup" value="option1">
+                            <label for="radioOption1">Option 1</label>
+                            <input type="radio" id="radioOption2" name="radioGroup" value="option2">
+                            <label for="radioOption2">Option 2</label>
+                        </div>
+                    </div>
+                    <div class="gold-center">
+                        <div class="chain gap-m">
+                            <input type="checkbox" id="checkboxOption" name="checkboxGroup" value="option">
+                            <label for="checkboxOption">Checkbox</label>
+                        </div>
                     </div>
                 </div>
                 <hr>
-                <h3>Table and lists</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Header 1</th>
-                            <th>Header 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Row 1, Cell 1</td>
-                            <td>Row 1, Cell 2</td>
-                        </tr>
-                    </tbody>
-                </table>                
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                </ul>
-                <ol>
-                    <li>First item</li>
-                    <li>Second item</li>
-                </ol>
-                <hr>
-                <h3>Blockquotes, code and abbreviations</h3>
-                <blockquote>This is a quote</blockquote>
-                <code>here is some code</code>
-                <abbr title="Dolor Sic Amet">Lorem Ipsum</abbr>
-                <hr>
-                <h3>Media</h3>
-                <audio controls>
-                    <source src="audio.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                <video width="320" height="240" controls>
-                    <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="stack gap-m gold-center">
+                        <h3>Media</h3>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <video width="320" height="240" controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </section>
-        <section>
+        <section id="faq" class="stack gap-xl">
             <div class="banner">
-                <a href="#faq"><h2 id="faq">FAQ</h2></a>
+                <a href="#faq"><h2>FAQ</h2></a>
             </div>
-            <div class="stack stack_medium gold_center">
+            <div class="stack gap-l gold-center">
                 <div>
-                    <h3>What?</h3>
-                    <p>I am trying to build a css bootstrap, plz help</p>
-                </div>
-                <div>
-                    <h3>... what?</h3>
+                    <h3>Can I use it?</h3>
                     <p>
-                        I am combining 
-                        <a href="https://www.joshwcomeau.com/css/custom-css-reset/">josh comeau css reset</a>, 
-                        <a href="https://every-layout.dev/">every-layout.dev</a> frames 
-                        and modular design (spaces and <abbr title="heavily leveraged">flexboxes</abbr> are based on the golden ratio)
-                    </p>
-                </div>
-                <div>
-                    <h3>It looks bad</h3>
-                    <p>It's worse on the inside! Take a look in devtools. That's why I need help</p>
-                </div>
-                <div>
-                    <h3>Where are you going?</h3>
-                    <p>
-                        I want it to end up as a <a href="https://unocss.dev/">UnoCSS</a> template. Help.
+                        Go on. I regret doing this anyway.
                     </p>
                 </div>
                 <div>
@@ -263,18 +246,16 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="download" class="stack gap-xl">
             <div class="banner">
-                <a href="#download"><h2 id="download">Download</h2></a>
+                <a href="#download"><h2>Download</h2></a>
             </div>
-            <div class="stack stack_medium gold_center">
-                <p>Just open devtools my man</p>
-                <p>Or check the <a href="https://github.com/1363V4/gold.css/blob/main/static/css/gold.css">Github</a></p>
+            <div class="gold-center">
+                <p>See source code on <a href="https://github.com/1363V4/gold.css/blob/main/static/css/gold.css">Github</a></p>
             </div>
         </section>
-        
         <footer>
-            <p>2024 gold css</p>
+            <p>2024 gold.css</p>
         </footer>
     </body>
 </html>

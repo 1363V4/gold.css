@@ -1,0 +1,93 @@
+article {
+    border: 1px solid var(--dark);
+    border-radius: var(--m);
+    overflow: hidden;
+}
+
+.article-title {
+    width: 100%;
+    padding-inline-start: var(--m);
+}
+
+.banner {
+    background-color: var(--blue);
+    padding-inline-start: var(--m);
+}
+
+.light-bg {
+    background-color: var(--light);
+}
+
+.dark-bg {
+    background-color: var(--dark);
+}
+
+.gold-bg {
+    background-color: var(--gold-0);
+}
+
+.pill-title {
+    height: 100%;
+}
+
+.logo {
+    width: 3em;
+}
+
+header {
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: var(--l);
+    padding-inline-end: var(--l);
+}
+
+#title > h1 {
+    color: var(--gold-0);
+    background-color: var(--dark);
+}
+
+#title > div > p {
+    font-size: var(--xl);
+    color: var(--blue);
+    font-style: italic;
+    background-color: var(--gold-0);
+}
+
+#hero > :first-child {
+    color: var(--light);
+}
+
+#hero button {
+    color: var(--light);
+    background-color: var(--dark);
+    transition: 0.2s ease-in-out;
+}
+
+#hero button:hover {
+    background: var(--gold-2);
+}
+
+pre {
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    background-color: var(--blue);
+    color: var(--light);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: var(--xxl);
+}
+
+section {
+    scroll-margin-top: var(--xxl);
+}
