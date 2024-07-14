@@ -56,6 +56,16 @@ header {
     background-color: var(--gold-0);
 }
 
+#hero-container {
+    container: hero-container / inline-size;
+}
+
+@container hero-container (width < 377px) {
+    #hero {
+        width: 100%;
+    }
+}
+
 #hero > :first-child {
     color: var(--light);
 }
@@ -91,3 +101,5 @@ header {
 section {
     scroll-margin-top: var(--xxl);
 }
+
+
