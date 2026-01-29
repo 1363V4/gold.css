@@ -29,6 +29,7 @@ code {
 h1 {
     font-weight: bold;
     padding-bottom: var(--m);
+    word-break: break-all;
     > span {
         font-weight: initial;
         font-style: italic;
