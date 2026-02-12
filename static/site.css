@@ -11,6 +11,7 @@
 body {
     background: darkslategray;
     font-family: monospace;
+    padding-inline: 60px;
     &.gw {
         margin-top: var(--m);
     }
