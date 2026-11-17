@@ -1,6 +1,12 @@
 @import url('gold.css') layer(gold);
 
 
+@media (width < 567px) {
+    :root {
+        --m: 20px
+    }
+}
+
 @view-transition {
     navigation: auto;
 }
